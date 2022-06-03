@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
-}
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  flex: 1 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ nav ul a,
+ nav .brand-logo,
+ .sidenav-trigger {
+   color: #444;
+ }
+ 
+ p {
+   line-height: 2rem;
+ }
+
+ .parallax{
+  opacity: .9;
+ }
+
+ .parallax img{
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+ }
+
+ .parallax-container {
+   min-height: 380px;
+   line-height: 0;
+   height: auto;
+   color: rgba(255,255,255);
+   
+ }
+ .parallax-container h1{
+  font-weight: 600;
+  text-shadow: 1px 1px 5px rgba(0,0,0,.5);
+ }
+ .parallax-container h5{
+  text-shadow: 1px 1px 5px rgba(0,0,0,.5);
+ }
+   .parallax-container .section {
+     width: 100%;
+   }
+ 
+ @media only screen and (max-width : 992px) {
+   .parallax-container .section {
+     position: absolute;
+     top: 40%;
+   }
+   #index-banner .section {
+     top: 10%;
+   }
+ }
+ 
+ @media only screen and (max-width : 600px) {
+   #index-banner .section {
+     top: 0;
+   }
+ }
+ 
+ .icon-block {
+   padding: 0 15px;
+ }
+ .icon-block .material-icons {
+   font-size: inherit;
+ }
+ 
+ footer.page-footer {
+   margin: 0;
+ }
+ 
