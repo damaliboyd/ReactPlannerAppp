@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import SideNav from "./SideNav";
 
 function Header() {
@@ -7,9 +7,9 @@ function Header() {
             <nav className="white" role="navigation">
                 <SideNav />
                 <div className="nav-wrapper container">
-                    <Link to="/">
-                        <a id="logo-container" className="brand-logo">Life Planner</a>
-                    </Link>
+                    <NavLink to="" id="logo-container" className="brand-logo">
+                        Life Planner
+                    </NavLink>
                     <ul className="right">
                         <li><a href="#">Log In</a></li>
                     </ul>
@@ -17,7 +17,7 @@ function Header() {
             </nav>
         </header>
 
-    )
+    );
 }
 
 export default Header;
